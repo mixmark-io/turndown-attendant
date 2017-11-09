@@ -1,6 +1,7 @@
 var test = require('tape').test
 
 function Attendant (options) {
+  this.test = test
   this.document = getDocument(options.file)
   this.TurndownService = options.TurndownService
   this.beforeEach = options.beforeEach || function id (input) { return input }
@@ -68,12 +69,12 @@ function runTestCase (testCase, options) {
     outputElement.className += ' output--err'
   }
 
-  test(testCaseName + ' (DOM)', function (t) {
+  this.test(testCaseName + ' (DOM)', function (t) {
     t.plan(1)
     t.equal(output, expected)
   })
 
-  test(testCaseName + ' (string)', function (t) {
+  this.test(testCaseName + ' (string)', function (t) {
     t.plan(1)
     t.equal(turndownService.turndown(inputElement.innerHTML), expected)
   })
