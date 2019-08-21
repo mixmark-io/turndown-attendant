@@ -73,11 +73,6 @@ function runTestCase (testCase, options) {
     t.plan(1)
     t.equal(output, expected)
   })
-
-  this.test(testCaseName + ' (string)', function (t) {
-    t.plan(1)
-    t.equal(turndownService.turndown(inputElement.innerHTML), expected)
-  })
 }
 
 module.exports = Attendant
