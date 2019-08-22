@@ -9,7 +9,7 @@
     "jsdom": false
   },
   "dependencies": {
-    "jsdom": "^11.3.0",
+    "jsdom": "^15.1.1",
     "tape": "^4.8.0"
   }
 }
