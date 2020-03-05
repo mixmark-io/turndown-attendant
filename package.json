@@ -1,6 +1,6 @@
 {
   "name": "turndown-attendant",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Test runner for HTML to Markdown conversions with Turndown",
   "main": "attendant.js",
   "author": "Dom Christie",
